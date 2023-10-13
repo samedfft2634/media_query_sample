@@ -25,9 +25,11 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	background-color: #efefef;
 }
 .card {
 	height: 100%;
+	width: 100%; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,16 +51,15 @@ h3 {
 	/* align-items: center; */
 	padding: 35px 40px;
 	background-color: #fff;
-	gap: 2rem;
+	gap: 1rem;
+	opacity: 0.9;
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
 
 .header {
-	height: 2rem;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -67,32 +68,28 @@ h3 {
 
 .head {
 	display: flex;
-	height: 2rem;
 	align-items: center;
 	justify-content: flex-start;
 	gap: 0.5rem;
 }
 
-
 .head span {
-	background-color:#2175f5 ;
+	background-color: #2175f5;
 	color: #fff;
 	padding: 3px 10px;
 	border-radius: 5px;
 }
-.header h3{
+.header h3 {
 	font-weight: 500;
 	margin-top: 3px;
 	font-size: 1.2rem;
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*                                   PRODUCT                                  */
 /* -------------------------------------------------------------------------- */
 .product {
 	padding: 10px 0;
-	
 }
 .product h3 {
 	font-size: 1.2rem;
@@ -106,9 +103,9 @@ h3 {
 /*                                   STORAGE                                  */
 /* -------------------------------------------------------------------------- */
 .storage {
-	 /* height: 105px; */
-	 margin-bottom: 10px;
-	 padding: 10px 0;
+	/* height: 105px; */
+	margin-bottom: 10px;
+	padding: 10px 0;
 }
 .storage h3 {
 	font-size: 1.2rem;
@@ -149,7 +146,7 @@ span.tb {
 	align-items: flex-end;
 }
 
-.buy a{
+.buy a {
 	text-decoration: none;
 	color: #fff;
 	letter-spacing: 3px;
@@ -160,18 +157,102 @@ span.tb {
 
 .price {
 	display: flex;
-justify-content: center;
+	justify-content: center;
 	align-items: flex-start;
 }
 
-.price i {
+/* .price i {
 	font-size: 1.5rem;
 	font-weight: 900;
 	line-height: 22.4px;
-
 }
 .price h1 {
 	font-size: 2rem;
 	font-weight: 600;
 	line-height: 2rem;
+} */
+
+.fa-dollar-sign {
+	display: inline-block;
+	position: relative;
+	font-size: 1.5rem;
+	top: -0.5rem;
 }
+
+@media screen and (max-width: 1400px) {
+	.container-info {
+		box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+		padding-bottom: 3rem;
+	}
+	.container {
+		padding: 10rem;
+	}
+	.header {
+		padding-top: 10rem;
+	}
+	.card {
+		padding: 0;
+	}
+	.product p {
+		display: -webkit-box;
+		display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+    }
+	.buy {
+		padding-bottom: 14rem;
+	}
+	}
+	/* dikey baski  */
+	/* satir azaliyor */
+
+@media screen and (max-width: 1200px) {
+	.container {
+		padding: 10rem 5rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	.container {
+	
+		/* height: 100%; */
+		overflow: auto;
+	}
+	.card {
+		flex-direction: column;
+		box-shadow: none;
+	
+	}
+	.container-info {
+		width: 100%;
+		box-shadow: none; 
+	}
+
+	.card img{
+		width: 100%;
+		/* height: 100%; */
+	}
+	.header {
+		padding-top: 0;	
+	}
+	.buy {
+		padding-bottom: 0;
+	}
+
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 400px) {
+}
+
+/* media 
+@media (max-width: 1400px)
+@media (max-width: 1200px)
+@media (max-width: 992px)
+@media (max-width: 768px)
+@media (max-width: 576px)
+@media (max-width: 400px)
+*/
