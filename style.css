@@ -13,6 +13,9 @@
 body {
 	height: 100vh;
 }
+h3 {
+	height: 29px;
+}
 /* -------------------------------------------------------------------------- */
 /*                                  CONTAINER                                 */
 /* -------------------------------------------------------------------------- */
@@ -46,15 +49,129 @@ body {
 	/* align-items: center; */
 	padding: 35px 40px;
 	background-color: #fff;
+	gap: 2rem;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
 
 .header {
 	height: 2rem;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	padding-bottom: 10px;
 }
 
 .head {
 	display: flex;
+	height: 2rem;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+}
+
+
+.head span {
+	background-color:#2175f5 ;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 5px;
+}
+.header h3{
+	font-weight: 500;
+	margin-top: 3px;
+	font-size: 1.2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   PRODUCT                                  */
+/* -------------------------------------------------------------------------- */
+.product {
+	padding: 10px 0;
+	
+}
+.product h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.product p {
+	overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   STORAGE                                  */
+/* -------------------------------------------------------------------------- */
+.storage {
+	 /* height: 105px; */
+	 margin-bottom: 10px;
+	 padding: 10px 0;
+}
+.storage h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.spans {
+	/* height: 56px; */
+	padding: 8px 0 8px 10px;
+	display: flex;
+	gap: 1rem;
+}
+.spans span {
+	font-size: 1.1rem;
+	font-weight: 600;
+	/* text-align: center; */
+	height: 40px;
+	width: 5rem;
+	cursor: pointer;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+}
+
+span.tb {
+	background-color: #2175f5;
+	color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     BUY                                    */
+/* -------------------------------------------------------------------------- */
+.buy {
+	padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.buy a{
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 3px;
+	background-color: #2175f5;
+	padding: 11px 1rem;
+	cursor: pointer;
+}
+
+.price {
+	display: flex;
+justify-content: center;
+	align-items: flex-start;
+}
+
+.price i {
+	font-size: 1.5rem;
+	font-weight: 900;
+	line-height: 22.4px;
+
+}
+.price h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 2rem;
 }
