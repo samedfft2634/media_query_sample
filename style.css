@@ -13,9 +13,7 @@
 body {
 	height: 100vh;
 }
-h3 {
-	height: 29px;
-}
+
 /* -------------------------------------------------------------------------- */
 /*                                  CONTAINER                                 */
 /* -------------------------------------------------------------------------- */
@@ -161,7 +159,7 @@ span.tb {
 	align-items: flex-start;
 }
 
-/* .price i {
+ .price i {
 	font-size: 1.5rem;
 	font-weight: 900;
 	line-height: 22.4px;
@@ -170,14 +168,9 @@ span.tb {
 	font-size: 2rem;
 	font-weight: 600;
 	line-height: 2rem;
-} */
+} 
 
-.fa-dollar-sign {
-	display: inline-block;
-	position: relative;
-	font-size: 1.5rem;
-	top: -0.5rem;
-}
+
 
 @media screen and (max-width: 1400px) {
 	.container-info {
@@ -241,11 +234,41 @@ span.tb {
 	}
 
 }
-@media screen and (max-width: 768px) {
-}
+
 @media screen and (max-width: 576px) {
+	.container h3 {
+		font-size: 1rem;
+	}
+	.container-info {
+		padding: 30px 15px;
+	}
+	.head h1 {
+		font-size: 1.4rem;
+	}
+	.product p {
+		font-size: .8rem;
+	}
+	.buy a {
+		font-size: .7rem;
+		padding:5px .5rem;
+	}
+	.container {
+		padding: 1rem 2rem;
+	}
+	.price h1 {
+		font-size: 1rem;
+	}
+	.price i {
+		font-size: .75rem;
+	}
 }
 @media screen and (max-width: 400px) {
+	.container {
+		padding: ;
+	}
+	.buy a i{
+		display: none;
+	}
 }
 
 /* media 
